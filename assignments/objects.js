@@ -81,9 +81,14 @@ console.log (objKennan.speak);
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-console.log (objAntonietta.multiplyNums(4,5));{
-  retun multiplyNums;
+objAntonietta.multiplyNums = function(a,b){
+  return a * b;
 }
+
+console.log(objAntonietta.multiplyNums(3,4))
+
+ // Invoke the function add
+ //console.log(add(2,4)) // 6 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
