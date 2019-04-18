@@ -11,7 +11,7 @@
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
-  "id": 0,
+  "id.": 0,
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
@@ -19,27 +19,76 @@ const example = {
 
 // Write your intern objects here:
 
+const objMitzi = {
+  ID: 0,
+  email: "mmelloy0@psu.edu",
+  firstName: "Mitzi", 
+  gender: "F"
+}
+
+const objKennan = {
+  ID: 1,
+  email: "kdiben1@tinypic.com",
+  firstName: "Kennan", 
+  gender: "M",
+}
+
+const objKeven ={
+  ID: 2,
+  email: "kmummery2@wikimedia.org",
+  firstName: "Keven", 
+  gender: "M"
+}
+
+const objGannie ={
+  ID: 3,
+  email: "gmartinson3@illinois.edu",
+  firstName: "Gannie", 
+  gender: "M"
+}
+
+const objAntonietta ={
+  ID: 4,
+  email: "adaine5@samsung.com",
+  firstName: "Antonietta", 
+  gender: "F"
+}
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log (objMitzi.firstName);
 
 // Kennan's ID
+console.log (objKennan.ID);
 
 // Keven's email
-
+console.log (objKeven.email);
 // Gannie's name
-
+console.log(objGannie.firstName);
 // Antonietta's Gender
-
+console.log(objAntonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+objKennan.speak = function(){
+  return "Hello, my name is Kennan!"
+}
+
+console.log (objKennan.speak);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
+objAntonietta.multiplyNums = function(a,b){
+  return a * b;
+}
+
+console.log(objAntonietta.multiplyNums(3,4))
+
+ // Invoke the function add
+ //console.log(add(2,4)) // 6 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
